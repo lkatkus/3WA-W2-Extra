@@ -2,18 +2,16 @@
 
 /*GLOBAL*/
 
+a{
+    color: inherit;
+}
+
 ul{
     padding: 0;
 }
 
 li{
     list-style-type: none;
-}
-
-li::before{
-    content: "x";
-    color: red;
-    padding-right: 0.5rem;
 }
 
 div{
@@ -23,10 +21,13 @@ div{
 /*SECTIONS*/
 
 .sectionHeader{
-    background-color: pink;
-    background-image: url('../img/header_bg.png');
-    background-position: bottom;
-    background-repeat: repeat-x;
+    background-color: #76c7c0;
+    height: 80px;
+    padding: 10px 0 10px 0;
+}
+
+.sectionGallery{
+    background-color: salmon;
 }
 
 .sectionServices{
@@ -34,6 +35,10 @@ div{
 }
 
 .sectionAbout{
+    background-color: coral;
+}
+
+.sectionDetails{
     background-color: cyan;
 }
 
@@ -42,12 +47,44 @@ div{
 }
 
 .sectionFooter{
-    background-color: orange;
+    background-color: #76c7c0;
+}
+
+.sectionCopyrights{
+    background-color: #6ab3ac;
+    height: 50px;
+}
+
+/*BACKGROUNDS*/
+
+.bgRulerTop{
     background-image: url('../img/footer_bg.png');
     background-position: top;
     background-repeat: repeat-x;
 }
 
-.sectionCopyrights{
-    background-color: blue;
+.bgRulerBottom{
+    background-image: url('../img/header_bg.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+/*LI STYLING*/
+
+.bulletsArrow1::before{
+    content: "→";
+    color: red;
+    padding-right: 0.5rem;
+}
+
+.bulletsArrow2::before{
+    content: ">";
+    color: red;
+    padding-right: 0.5rem;
+}
+
+/*TEXT STYLING*/
+
+.text-white{
+    color: white;
 }

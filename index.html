@@ -11,7 +11,7 @@
     </head>
 
     <body>
-            <section class="sectionHeader">
+            <section class="sectionHeader bgRulerBottom">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                       <a class="navbar-brand" href="#">MODUS Versus</a>
@@ -19,8 +19,8 @@
                         <span class="navbar-toggler-icon"></span>
                       </button>
 
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav">
                           <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
                           </li>
@@ -42,13 +42,53 @@
                           <li class="nav-item">
                             <a class="nav-link" href="#">Contacts</a>
                           </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i>
+</a>
+                          </li>
                         </ul>
                       </div>
                     </nav>
                 </div>
             </section>
+---
+            <section class="sectionGallery">
+                <div class="container-fluid">
 
-asd
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block img-fluid" src="img/carousel/carousel1.jpg" alt="First slide" style="width:100%;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Vestibulum</h3>
+                                <p>Bacon ipsum dolor amet beef ribs ribeye tenderloin, cupim andouille ground round ball tip. Picanha tenderloin pastrami tail sirloin porchetta spare ribs.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="img/carousel/carousel2.jpg" alt="Second slide" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="img/carousel/carousel3.jpg" alt="Third slide" style="width:100%">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+                </div>
+            </section>
+---
             <section class="sectionServices">
                 <div class="container">
                     <div class="row">
@@ -56,7 +96,7 @@ asd
                             <h2>Some of our top services</h2>
                             <p>Bacon ipsum dolor amet beef ribs ribeye tenderloin, cupim andouille ground round ball tip. Picanha tenderloin pastrami tail sirloin porchetta spare ribs.</p>
                         </div>
-                        <div class="col-md-3 ">
+                        <div class="col-md-3 text-center">
                             <button type="button" class="btn btn-danger">View More</button>
                         </div>
                     </div>
@@ -90,20 +130,30 @@ asd
 
                 </div>
             </section>
-
-asd
-            <section class="sectionAbout">
+---
+            <section class="sectionAbout bgRulerTop">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2>Why modus versus?</h2>
+                            <p>Bacon ipsum dolor amet beef ribs ribeye tenderloin, cupim andouille ground round ball tip. Picanha tenderloin pastrami tail sirloin porchetta spare ribs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+---
+            <section class="sectionDetails">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
                             <p>Why Choose Us?</p>
                             <ul>
-                                <li>Quisque at massa ipsum</li>
-                                <li>Maecenas a lorem augue, egestas</li>
-                                <li>Cras vitae felis at lacus eleifend</li>
-                                <li>Quisque at massa ipsum</li>
-                                <li>Maecenas a lorem augue, egestas</li>
-                                <li>Cras vitae felis at lacus eleifend</li>
+                                <li class="bulletsArrow1">Quisque at massa ipsum</li>
+                                <li class="bulletsArrow1">Maecenas a lorem augue, egestas</li>
+                                <li class="bulletsArrow1">Cras vitae felis at lacus eleifend</li>
+                                <li class="bulletsArrow1">Quisque at massa ipsum</li>
+                                <li class="bulletsArrow1">Maecenas a lorem augue, egestas</li>
+                                <li class="bulletsArrow1">Cras vitae felis at lacus eleifend</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
@@ -134,9 +184,7 @@ asd
                     </div>
                 </div>
             </section>
-
-asd
-
+---
             <section class="sectionClients">
                 <div class="container">
                     <div class="row">
@@ -173,10 +221,8 @@ asd
                     </div>
                 </div>
             </section>
-
-asd
-
-            <section class="sectionFooter">
+---
+            <section class="sectionFooter bgRulerTop text-white">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -188,25 +234,47 @@ asd
                         <div class="col-md-2">
                             <h4>Company</h4>
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Testimonials</a></li>
+                                <li class="bulletsArrow2"><a href="#">About</a></li>
+                                <li class="bulletsArrow2"><a href="#">FAQ</a></li>
+                                <li class="bulletsArrow2"><a href="#">Contact</a></li>
+                                <li class="bulletsArrow2"><a href="#">Terms</a></li>
+                                <li class="bulletsArrow2"><a href="#">Privacy</a></li>
+                                <li class="bulletsArrow2"><a href="#">Testimonials</a></li>
                             </ul>
                         </div>
                         <div class="col-md-2">
                             <h4>Community</h4>
                             <ul>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Newsletter</a></li>
+                                <li class="bulletsArrow2"><a href="#">Blog</a></li>
+                                <li class="bulletsArrow2"><a href="#">Forum</a></li>
+                                <li class="bulletsArrow2"><a href="#">Support</a></li>
+                                <li class="bulletsArrow2"><a href="#">Newsletter</a></li>
                             </ul>
                         </div>
                         <div class="col-md-4">
-                            col 4
+                            <p>from the blog</p>
+
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        PIC
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>Lorem</p>
+                                        <p>26 May, 2013</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        PIC
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>Lorem</p>
+                                        <p>26 May, 2013</p>
+                                    </div>
+                                </div>
+                        </div>
                         </div>
                     </div>
                 </div>
