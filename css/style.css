@@ -31,17 +31,16 @@ h3{
     font-size: 1.2rem;
 }
 
+/*GUTTER FOR FIRST AND LAST COL OF ROW*/
+.row > div[class^="col-"]:first-child{padding-left:0;}
+.row > div[class^="col-"]:last-child{padding-right:0;}
 
 /*div{
     background-color: grey;
     border: 2px solid blue;
-}
+}*/
 
-.container{
-    border: 2px solid red;
-}
-
-.row{
+/*.row{
     border: 2px solid green;
 }*/
 
