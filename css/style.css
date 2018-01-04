@@ -1,0 +1,53 @@
+@import url('normalize.css');
+
+/*GLOBAL*/
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+li::before{
+    content: "x";
+    color: red;
+    padding-right: 0.5rem;
+}
+
+div{
+    background-color: grey;
+}
+
+/*SECTIONS*/
+
+.sectionHeader{
+    background-color: pink;
+    background-image: url('../img/header_bg.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.sectionServices{
+    background-color: gold;
+}
+
+.sectionAbout{
+    background-color: cyan;
+}
+
+.sectionClients{
+    background-color: lime;
+}
+
+.sectionFooter{
+    background-color: orange;
+    background-image: url('../img/footer_bg.png');
+    background-position: top;
+    background-repeat: repeat-x;
+}
+
+.sectionCopyrights{
+    background-color: blue;
+}
