@@ -2,6 +2,11 @@
 
 /*GLOBAL*/
 
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
 a{
     color: inherit;
 }
@@ -14,28 +19,49 @@ li{
     list-style-type: none;
 }
 
-div{
-    background-color: grey;
+h1{
+    font-size: 3rem;
 }
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+
+/*div{
+    background-color: grey;
+    border: 2px solid blue;
+}
+
+.container{
+    border: 2px solid red;
+}
+
+.row{
+    border: 2px solid green;
+}*/
 
 /*SECTIONS*/
 
 .sectionHeader{
     background-color: #76c7c0;
-    height: 80px;
     padding: 10px 0 10px 0;
 }
 
 .sectionGallery{
-    background-color: salmon;
+    background-color: #f3f3f3;
 }
 
 .sectionServices{
-    background-color: gold;
+    background-color: #f3f3f3;
 }
 
 .sectionAbout{
-    background-color: coral;
+    background-color: #ececec;
 }
 
 .sectionDetails{
@@ -48,11 +74,12 @@ div{
 
 .sectionFooter{
     background-color: #76c7c0;
+    padding-top: 20px;
 }
 
 .sectionCopyrights{
     background-color: #6ab3ac;
-    height: 50px;
+    padding: 15px 0 15px 0;
 }
 
 /*BACKGROUNDS*/
@@ -67,6 +94,27 @@ div{
     background-image: url('../img/header_bg.png');
     background-position: bottom;
     background-repeat: repeat-x;
+}
+
+.bgColorWhite{
+    background-color: #d3d3d3;
+}
+
+.bgColorRed{
+    background-color: #e2534b;
+    color: white;
+}
+
+.bgColorGrey{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bgColorLightGrey{
+    background-color: #ececec;
+}
+
+.bgColorVeryLight{
+    background-color: #f8f8f8;
 }
 
 /*LI STYLING*/
@@ -87,4 +135,65 @@ div{
 
 .text-white{
     color: white;
+}
+
+.text-red{
+    color: #e2534b;
+}
+
+.text-green{
+    color: #76c7c0;
+}
+
+.text-caps{
+    text-transform: uppercase;
+}
+
+/*BUTTON STYLING*/
+
+.offsetMid{
+    position: relative;
+    top: -1rem;
+    transform: translateY(-50%);
+}
+
+/*CAROUSEL STYLING*/
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.carousel-inner{
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-inner img{
+    width: 100%;
+}
+
+.carousel-caption-middle{
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+}
+
+.carousel-control-prev-icon{
+    background-color: red;
+}
+
+.carousel-control-next-icon{
+    background-color: red;
+}
+
+/*DIV STYLING*/
+
+.roundedCorner{
+    border-radius: 0.5rem;
+}
+
+.shadowBottom{
+    border-bottom: solid 2px #c3c3c3;
 }
