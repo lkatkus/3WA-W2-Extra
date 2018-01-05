@@ -32,8 +32,8 @@ h3{
 }
 
 /*GUTTER FOR FIRST AND LAST COL OF ROW*/
-.row > div[class^="col-"]:first-child{padding-left:0;}
-.row > div[class^="col-"]:last-child{padding-right:0;}
+/*.row > div[class^="col-"]:first-child{padding-left:0;}
+.row > div[class^="col-"]:last-child{padding-right:0;}*/
 
 /*div{
     background-color: grey;
