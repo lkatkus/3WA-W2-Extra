@@ -119,15 +119,20 @@ h3{
 /*LI STYLING*/
 
 .bulletsArrow1::before{
-    content: "→";
-    color: red;
+    font-family: FontAwesome;
+    content: "\f061";
+    color: #e2534b;
     padding-right: 0.5rem;
+    font-size: 0.7rem;
+    vertical-align: middle;
 }
 
 .bulletsArrow2::before{
-    content: ">";
-    color: red;
+    font-family: FontAwesome;
+    content: "\f054";
     padding-right: 0.5rem;
+    font-size: 0.7rem;
+    vertical-align: middle;
 }
 
 /*TEXT STYLING*/
@@ -195,4 +200,24 @@ h3{
 
 .shadowBottom{
     border-bottom: solid 2px #c3c3c3;
+}
+
+.quoteBox{
+    position: relative;
+    padding: 10px;
+}
+
+.quoteBox p{
+    margin: 0;
+    font-style: italic;
+}
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-top: 20px solid #f8f8f8;
+	border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
 }
