@@ -205,11 +205,13 @@ h3{
 .quoteBox{
     position: relative;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .quoteBox p{
     margin: 0;
     font-style: italic;
+    text-align: justify;
 }
 
 .triangle{
