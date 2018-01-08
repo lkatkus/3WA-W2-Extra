@@ -221,9 +221,11 @@ a:hover{
     height: auto;
 }
 
-.carousel-inner img{
-
-}
+/*.carousel-inner>.active{
+    position: relative;
+    bottom: 0;
+    transform: translateY(-50%);
+}*/
 
 .carousel-caption-middle{
     top:50%;
