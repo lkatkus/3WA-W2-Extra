@@ -4,7 +4,7 @@
 
 html{
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 a{
@@ -21,15 +21,18 @@ li{
 
 h1{
     font-size: 3rem;
+    font-weight: 800;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 
 h3{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
+
 
 /*GUTTER FOR FIRST AND LAST COL OF ROW*/
 /*.row > div[class^="col-"]:first-child{padding-left:0;}
@@ -93,6 +96,10 @@ h3{
 
 .padding10{
     padding: 10px;
+}
+
+.btnPadding{
+    padding: 5px;
 }
 
 /*BACKGROUNDS*/
@@ -159,12 +166,20 @@ h3{
     color: white;
 }
 
+.text-grey{
+    color:#7f8c8c;
+}
+
 .text-red{
     color: #e2534b;
 }
 
 .text-green{
     color: #76c7c0;
+}
+
+.text-darkGreen{
+    color: #3b6360;
 }
 
 .text-caps{
@@ -301,4 +316,11 @@ a:hover{
     position: absolute;
     bottom: -20px;
     left: 10px;
+}
+
+/*IMG STYLING*/
+
+.image-full{
+    width: 100%;
+    padding: 5px 0 5px 0;
 }
