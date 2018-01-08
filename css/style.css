@@ -198,6 +198,11 @@ h3{
     border-color: #76c7c0;
 }
 
+.btn-info:hover{
+    background-color: #e2534b;
+    border-color: #e2534b;
+}
+
 .btn-danger{
     background-color: #e2534b;
     border-color: #e2534b;
@@ -208,6 +213,11 @@ a:hover{
     text-decoration: none;
     color: #e2534b;
 }
+
+/*HOVER STYLINGS*/
+
+
+
 
 /*CAROUSEL STYLING*/
 
