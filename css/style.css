@@ -160,6 +160,49 @@ h3{
     vertical-align: middle;
 }
 
+/*NAVBAR STYLING
+*/
+.navbar li{
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+/*.navbar li:hover{
+    background-color: #e8645a;
+    border-radius: 0.5rem;
+    border-bottom: solid 2px #e2534b;
+}
+*/
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.dropMenuStyle{
+    box-sizing: border-box;
+    background-color: #e2534b;
+    border-radius: 0.5rem;
+    padding: 3px;
+}
+
+.dropMenuStyle a{
+    border-bottom: solid 2px #e2534b;
+    color: white;
+    background-color: #e8645a;
+    border-radius: 0.5rem;
+}
+
+.dropdown-menu.show{
+background-color: transparent;
+border: none;
+}
+
+
+.navbar .active{
+    background-color: red;
+}
+
 /*TEXT STYLING*/
 
 .text-white{
@@ -316,6 +359,16 @@ a:hover{
     position: absolute;
     bottom: -20px;
     left: 10px;
+}
+
+.triangle2{
+    width: 0;
+    height: 0;
+    position: relative;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #e2534b transparent;
+    left: 5px;
 }
 
 /*IMG STYLING*/
