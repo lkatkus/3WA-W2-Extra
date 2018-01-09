@@ -167,12 +167,12 @@ h3{
     border-bottom: 2px solid transparent;
 }
 
-/*.navbar li:hover{
+.navbar li:hover{
     background-color: #e8645a;
     border-radius: 0.5rem;
     border-bottom: solid 2px #e2534b;
 }
-*/
+
 .menu {
     display: flex;
     justify-content: space-around;
