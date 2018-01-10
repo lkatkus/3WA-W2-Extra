@@ -31,21 +31,9 @@ h2{
 
 h3{
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
-
-
-/*GUTTER FOR FIRST AND LAST COL OF ROW*/
-/*.row > div[class^="col-"]:first-child{padding-left:0;}
-.row > div[class^="col-"]:last-child{padding-right:0;}*/
-
-/*div{
-    background-color: grey;
-    border: 2px solid blue;
-}*/
-
-/*.row{
-    border: 2px solid green;
-}*/
 
 /*SECTIONS*/
 
@@ -94,12 +82,28 @@ h3{
     padding: 10px 0 10px 0;
 }
 
+.rowPadding20{
+    padding: 20px 0 20px 0;
+}
+
+.rowMargin10{
+    margin: 10px 0 10px 0;
+}
+
 .padding10{
     padding: 10px;
 }
 
+.margin0{
+    margin: 0;
+}
+
+.padding0{
+    padding: 0;
+}
+
 .btnPadding{
-    padding: 5px;
+    padding: 5px 20px 5px 20px;
 }
 
 /*BACKGROUNDS*/
@@ -117,7 +121,7 @@ h3{
 }
 
 .bgColorWhite{
-    background-color: #d3d3d3;
+    background-color: white;
 }
 
 .bgColorRed{
@@ -138,7 +142,7 @@ h3{
 }
 
 .bgColorVeryLight{
-    background-color: #f8f8f8;
+    background-color: #f3f3f3;
 }
 
 /*LI STYLING*/
@@ -291,17 +295,12 @@ a:hover{
     height: auto;
 }
 
-/*.carousel-inner>.active{
-    position: relative;
-    bottom: 0;
-    transform: translateY(-50%);
-}*/
-
 .carousel-caption-middle{
     top:50%;
     transform: translateY(-50%);
     width: 100%;
     left: 0;
+    position: absolute;
 }
 
 .carousel-control-next, .carousel-control-prev{
@@ -331,10 +330,25 @@ a:hover{
     background-color: #e2534b;
 }
 
+.carousel-caption{
+    bottom: unset;
+}
+
+.carousel-item{
+    max-height: 500px;
+}
+
+/* not working properly. img not centering verticaly */
+/*.carousel-item img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}*/
+
 /*DIV STYLING*/
 
 .roundedCorner{
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .shadowBottom{
@@ -373,9 +387,31 @@ a:hover{
     left: 5px;
 }
 
+.triangle3{
+    width: 0;
+    height: 0;
+    float: left;
+    position: relative;
+    bottom: -10px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #ececec transparent transparent transparent;
+
+}
+
 /*IMG STYLING*/
 
 .image-full{
     width: 100%;
     padding: 5px 0 5px 0;
+}
+
+/*FORM STYLING*/
+input, textarea{
+    background-color: #e4e6e6;
+    border-radius: 0.3rem;
+    border-top: 2px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 2px solid #d3d3d3;
 }
