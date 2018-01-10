@@ -160,8 +160,7 @@ h3{
     vertical-align: middle;
 }
 
-/*NAVBAR STYLING
-*/
+/*NAVBAR STYLING*/
 .navbar li{
     padding: 5px;
     border-bottom: 2px solid transparent;
@@ -198,6 +197,9 @@ background-color: transparent;
 border: none;
 }
 
+.dropdown-toggle::after{
+    display: none;
+}
 
 .navbar .active{
     background-color: red;
