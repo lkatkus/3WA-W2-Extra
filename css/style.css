@@ -258,6 +258,13 @@ border: none;
     transform: translateY(-50%);
 }
 
+.offsetCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .offsetMidTop{
     position: absolute;
     top: 0;
@@ -481,7 +488,6 @@ a:hover{
     color: white;
 }
 
-
 /*FORM STYLING*/
 input, textarea{
     background-color: #e4e6e6;
@@ -492,6 +498,11 @@ input, textarea{
     border-left: 2px solid #d3d3d3;
 }
 
+/*TABLES STYLING*/
+
+table, .table td, .table th{
+    border-top: unset;
+}
 
 /* MEDIA QUERY OVERWRIGHTS */
 
@@ -499,5 +510,9 @@ input, textarea{
     .projectTab{
         margin-top: 0;
         margin-bottom: 20px;
+    }
+
+    .btn-secondary{
+        margin-bottom: 5px;
     }
 }
