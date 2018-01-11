@@ -31,6 +31,7 @@ h2{
 
 h3{
     font-size: 1rem;
+    margin: 0;
 }
 
 /*SECTIONS*/
@@ -72,7 +73,6 @@ h3{
 
 .sectionCopyrights{
     background-color: #6ab3ac;
-    padding: 20px 0 20px 0;
 }
 
 /*PADDING STYLING*/
@@ -103,6 +103,14 @@ h3{
 
 .btnPadding{
     padding: 5px 20px 5px 20px;
+}
+
+.infoTabPadding{
+    padding: 30px 15px 30px 15px; /* padding for inner content. Top larger because of btns */
+}
+
+.marginBottom20{
+    margin-bottom: 40px;
 }
 
 /*BACKGROUNDS*/
@@ -240,10 +248,28 @@ border: none;
 
 /*BUTTON STYLING*/
 
+.btnWidth60{
+    width: 60%;
+}
+
 .offsetMid{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.offsetMidTop{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.offsetMidBottom{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
 }
 
 .offsetLeft{
@@ -279,8 +305,17 @@ a:hover{
 
 /*HOVER STYLINGS*/
 
+.infoTab:hover{
+    background-color: #76c7c0;
+    color: white;
+    transition: 0.2s;
+}
 
-
+.infoTab:hover button{
+    background-color: #e2534b;
+    border-color: #e2534b;
+    transition: 0.2s;
+}
 
 /*CAROUSEL STYLING*/
 
