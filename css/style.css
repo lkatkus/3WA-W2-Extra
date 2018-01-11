@@ -382,7 +382,7 @@ a:hover{
 /*DIV STYLING*/
 
 .roundedCorner{
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
 }
 
 .shadowBottom{
@@ -437,8 +437,45 @@ a:hover{
 
 .image-full{
     width: 100%;
-    padding: 5px 0 5px 0;
 }
+
+.projectTab{
+    margin-bottom: 15px;
+}
+
+.projectTabCaption{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #76c7c0;
+}
+
+.projectTab:hover .projectTabCaption{
+    opacity: 1;
+}
+
+.projectTabCaptionContent{
+    color: white;
+}
+
+.projectTabCaptionContent a i{
+    background-color: #74b7b0;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+}
+
+.projectTabCaptionContent a i:hover{
+    background-color: #e2534b;
+    color: white;
+}
+
 
 /*FORM STYLING*/
 input, textarea{
@@ -448,4 +485,14 @@ input, textarea{
     border-right: 1px solid #d3d3d3;
     border-bottom: 1px solid #d3d3d3;
     border-left: 2px solid #d3d3d3;
+}
+
+
+/* MEDIA QUERY OVERWRIGHTS */
+
+@media (max-width: 576px) {
+    .projectTab{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 }
