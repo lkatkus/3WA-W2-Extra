@@ -32,6 +32,7 @@ h2{
 h3{
     font-size: 1rem;
     margin: 0;
+    padding: 10px 0 10px 0;
 }
 
 /*SECTIONS*/
@@ -157,21 +158,36 @@ h3{
 
 /*LI STYLING*/
 
-.bulletsArrow1::before{
+.bulletArrow1 li::before{
     font-family: FontAwesome;
     content: "\f061";
-    color: #e2534b;
     padding-right: 0.5rem;
-    font-size: 0.7rem;
     vertical-align: middle;
+    color: #e2534b;
 }
 
-.bulletsArrow2::before{
+.bulletArrow2 li::before{
     font-family: FontAwesome;
     content: "\f054";
     padding-right: 0.5rem;
-    font-size: 0.7rem;
     vertical-align: middle;
+    color: #74b7b0;
+}
+
+.bulletArrow3 li::before{
+    font-family: FontAwesome;
+    content: "\f00d";
+    padding-right: 0.5rem;
+    vertical-align: middle;
+    color: #e2534b;
+}
+
+.bulletArrow4 li::before{
+    font-family: FontAwesome;
+    content: "\f00c";
+    padding-right: 0.5rem;
+    vertical-align: middle;
+    color: #74b7b0;
 }
 
 /*NAVBAR STYLING*/
