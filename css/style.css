@@ -544,6 +544,12 @@ tr{
     border-bottom: 1px solid #d3d3d3;
 }
 
+/* PAGINATION STYLING */
+.page-link{
+    color: white;
+    background-color: #868e96;
+}
+
 /* MEDIA QUERY OVERWRITS */
 
 @media (max-width: 576px) {
