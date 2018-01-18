@@ -4,11 +4,27 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MODUSversus</title>
+
+        <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+        <!-- BOOSTRAP CDN -->
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- CHART JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+
+        <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+
+        <!-- CUSTOM JS -->
+        <script type="text/javascript" src="js/chart.js">
+
+        </script>
+
+        <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -110,21 +126,30 @@
 
                         <div class="col-12 padding0">
                             <div class="row">
-                                <div class="col-md-3 bg-danger">
-                                    50
+                                <div class="col-md-3">
+                                    <h3 class="text-caps font-weight-bold text-center">Suspendise</h3>
+                                    <canvas id="myChart1" width="100%" height="100%"></canvas>
+                                    <script>drawChart("myChart1",50)</script>
                                 </div>
                                 <div class="col-md-3">
-                                    70
+                                    <h3 class="text-caps font-weight-bold text-center">Maecenas</h3>
+                                    <canvas id="myChart2" width="100%" height="100%"></canvas>
+                                    <script>drawChart("myChart2",70)</script>
                                 </div>
                                 <div class="col-md-3">
-                                    80
+                                    <h3 class="text-caps font-weight-bold text-center">Aliquam</h3>
+                                    <canvas id="myChart3" width="100%" height="100%"></canvas>
+                                    <script>drawChart("myChart3",80)</script>
                                 </div>
                                 <div class="col-md-3">
-                                    100
+                                    <h3 class="text-caps font-weight-bold text-center">Habitasse</h3>
+                                    <canvas id="myChart4" width="100%" height="100%"></canvas>
+                                    <script>drawChart("myChart4",100)</script>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3">
                         <h3 class="font-weight-bold">What Clients Say?</h3>
                         <div class="bgColorWhite roundedCorner quoteBox">
@@ -147,29 +172,37 @@
                 </div>
 
                     <div class="row text-center">
-                        <div class="col-md-3 hoverz">
-                            <div class="bgColorWhite roundedCorner shadowBottom padding10">
-                                <img class="img-fluid" src="img/team/person-placeholder.png" alt="">
+                        <div class="col-md-3">
+                            <div class="servicesTab">
+                                <div class="bgColorWhite roundedCorner shadowBottom padding10">
+                                    <img class="img-fluid" src="img/team/person-placeholder.png" alt="">
+                                </div>
+                                <button type="button" class="btn btn-info offsetMid">John Doe</button>
                             </div>
-                            <button type="button" class="btn btn-info offsetMid">John Doe</button>
                         </div>
                         <div class="col-md-3">
-                            <div class="bgColorWhite roundedCorner shadowBottom padding10">
-                                <img class="img-fluid" src="img/team/person-placeholder.png" alt="">
+                            <div class="servicesTab">
+                                <div class="bgColorWhite roundedCorner shadowBottom padding10">
+                                    <img class="img-fluid" src="img/team/person-placeholder.png" alt="">
+                                </div>
+                                <button type="button" class="btn btn-info offsetMid">John Doe</button>
                             </div>
-                            <button type="button" class="btn btn-info offsetMid">John Doe</button>
                         </div>
                         <div class="col-md-3">
-                            <div class="bgColorWhite roundedCorner shadowBottom padding10">
-                                <img class="img-fluid" src="img/team/person-placeholder.png" alt="">
+                            <div class="servicesTab">
+                                <div class="bgColorWhite roundedCorner shadowBottom padding10">
+                                    <img class="img-fluid" src="img/team/person-placeholder.png" alt="">
+                                </div>
+                                <button type="button" class="btn btn-info offsetMid">John Doe</button>
                             </div>
-                            <button type="button" class="btn btn-info offsetMid">John Doe</button>
                         </div>
                         <div class="col-md-3">
-                            <div class="bgColorWhite roundedCorner shadowBottom padding10">
-                                <img class="img-fluid" src="img/team/person-placeholder.png" alt="">
+                            <div class="servicesTab">
+                                <div class="bgColorWhite roundedCorner shadowBottom padding10">
+                                    <img class="img-fluid" src="img/team/person-placeholder.png" alt="">
+                                </div>
+                                <button type="button" class="btn btn-info offsetMid">John Doe</button>
                             </div>
-                            <button type="button" class="btn btn-info offsetMid">John Doe</button>
                         </div>
                     </div>
 

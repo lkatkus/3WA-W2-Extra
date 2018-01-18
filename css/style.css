@@ -1,6 +1,16 @@
 @import url('normalize.css');
 
+/*VARIABLES*/
+*{
+    --default-transition: all 0.5s;
+    --color-green: #76c7c0;
+    --color-red: #e2534b;
+}
+
 /*GLOBAL*/
+*{
+    transition: var(--default-transition);
+}
 
 html{
     font-family: 'Open Sans', sans-serif;
@@ -38,7 +48,7 @@ h3{
 /*SECTIONS*/
 
 .sectionHeader{
-    background-color: #76c7c0;
+    background-color: var(--color-green);
     padding: 10px 0 10px 0;
 }
 
@@ -68,7 +78,7 @@ h3{
 }
 
 .sectionFooter{
-    background-color: #76c7c0;
+    background-color: var(--color-green);
     padding-top: 20px;
 }
 
@@ -133,11 +143,11 @@ h3{
 }
 
 .bgColorRed{
-    background-color: #e2534b;
+    background-color: var(--color-red);
 }
 
 .bgColorGreen{
-    background-color: #76c7c0;
+    background-color: var(--color-green);
 }
 
 .bgColorTransparent{
@@ -163,7 +173,7 @@ h3{
     content: "\f061";
     padding-right: 0.5rem;
     vertical-align: middle;
-    color: #e2534b;
+    color: var(--color-red);
 }
 
 .bulletArrow2 li::before{
@@ -179,7 +189,7 @@ h3{
     content: "\f00d";
     padding-right: 0.5rem;
     vertical-align: middle;
-    color: #e2534b;
+    color: var(--color-red);
 }
 
 .bulletArrow4 li::before{
@@ -194,12 +204,14 @@ h3{
 .navbar li{
     padding: 5px;
     border-bottom: 2px solid transparent;
+    border-radius: 0.5rem;
+    transition: var(--default-transition);
 }
 
 .navbar li:hover{
     background-color: #e8645a;
     border-radius: 0.5rem;
-    border-bottom: solid 2px #e2534b;
+    border-bottom: solid 2px var(--color-red);
 }
 
 .menu {
@@ -210,16 +222,22 @@ h3{
 
 .dropMenuStyle{
     box-sizing: border-box;
-    background-color: #e2534b;
+    background-color: var(--color-red);
     border-radius: 0.5rem;
     padding: 3px;
 }
 
 .dropMenuStyle a{
-    border-bottom: solid 2px #e2534b;
+    border-bottom: solid 2px var(--color-red);
     color: white;
     background-color: #e8645a;
     border-radius: 0.5rem;
+    transition: var(--default-transition);
+}
+
+.dropMenuStyle a:hover{
+    background-color: #74b7b0;
+    color: white;
 }
 
 .dropdown-menu.show{
@@ -246,11 +264,11 @@ border: none;
 }
 
 .text-red{
-    color: #e2534b;
+    color: var(--color-red);
 }
 
 .text-green{
-    color: #76c7c0;
+    color: var(--color-green);
 }
 
 .text-darkGreen{
@@ -309,43 +327,58 @@ border: none;
 }
 
 .btn-info{
-    background-color: #76c7c0;
-    border-color: #76c7c0;
+    background-color: var(--color-green);
+    border-color: var(--color-green);
 }
 
 .btn-info:hover{
-    background-color: #e2534b;
-    border-color: #e2534b;
+    background-color: var(--color-red);
+    border-color: var(--color-red);
 }
 
 .btn-danger{
-    background-color: #e2534b;
-    border-color: #e2534b;
+    background-color: var(--color-red);
+    border-color: var(--color-red);
 }
 
 .btn-secondary:hover{
-    background-color: #e2534b;
-    border-color: #e2534b;
+    background-color: var(--color-red);
+    border-color: var(--color-red);
 }
 
 /*ANCHOR STYLING*/
 a:hover{
     text-decoration: none;
-    color: #e2534b;
+    color: var(--color-red);
 }
 
 /*HOVER STYLINGS*/
 
 .infoTab:hover{
-    background-color: #76c7c0;
+    background-color: var(--color-green);
     color: white;
-    transition: 0.2s;
+    transition: var(--default-transition);
 }
 
 .infoTab:hover button{
-    background-color: #e2534b;
-    border-color: #e2534b;
-    transition: 0.2s;
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    transition: var(--default-transition);
+}
+
+.servicesTab:hover{
+    cursor: pointer;
+}
+
+.servicesTab:hover i{
+    color:var(--color-red);
+    transition: var(--default-transition);
+}
+
+.servicesTab:hover button{
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    transition: var(--default-transition);
 }
 
 /*CAROUSEL STYLING*/
@@ -372,7 +405,7 @@ a:hover{
     width: unset;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
-    background-color: #e2534b;
+    background-color: var(--color-red);
     width: 50px;
     height: 30px;
     padding: 10px;
@@ -392,7 +425,7 @@ a:hover{
 }
 
 .carousel-indicators .active{
-    background-color: #e2534b;
+    background-color: var(--color-red);
 }
 
 .carousel-caption{
@@ -448,7 +481,7 @@ a:hover{
     position: relative;
     border-style: solid;
     border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #e2534b transparent;
+    border-color: transparent transparent var(--color-red) transparent;
     left: 5px;
 }
 
@@ -483,8 +516,8 @@ a:hover{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #76c7c0;
+    transition: var(--default-transition);
+    background-color: var(--color-green);
 }
 
 .projectTab:hover .projectTabCaption{
@@ -503,7 +536,7 @@ a:hover{
 }
 
 .projectTabCaptionContent a i:hover{
-    background-color: #e2534b;
+    background-color: var(--color-red);
     color: white;
 }
 
