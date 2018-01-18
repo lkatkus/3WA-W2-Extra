@@ -2,9 +2,14 @@
 
 /*VARIABLES*/
 *{
+
+    /*COLOR SCHEME*/
     --default-transition: all 0.5s;
-    --color-green: #76c7c0;
-    --color-red: #e2534b;
+    --color-green: #76c7c0; /*HEADER, FOOTER, INFO BTNS */
+    --color-dark-green: #6ab3ac; /* FOOTER COPYRIGHTS */
+    --color-red: #e2534b; /* DANGER BTN, GENERAL HIGHLIGHTS */
+    --color-grey: #ececec; /* SECTION BACKGROUND */
+    --color-light-grey: #f3f3f3; /* SECTION BACKGROUND */
 }
 
 /*GLOBAL*/
@@ -53,27 +58,33 @@ h3{
 }
 
 .sectionGallery{
-    background-color: #f3f3f3;
+    background-color: var(--color-light-grey);
 }
 
 .sectionServices{
-    background-color: #f3f3f3;
+    background-color: var(--color-light-grey);
     padding: 55px 0 20px 0;
 }
 
 .sectionAbout{
-    background-color: #ececec;
+    background-color: var(--color-grey);
     padding: 20px 0 20px 0;
+}
+
+.sectionAboutImages{
+    background: var(--color-grey); /* Old browsers */
+    background: -moz-linear-gradient(top, var(--color-grey) 0%, var(--color-grey) 50%, var(--color-light-grey) 50%, var(--color-light-grey) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, var(--color-grey) 0%,var(--color-grey) 50%,var(--color-light-grey) 50%,var(--color-light-grey) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, var(--color-grey) 0%,var(--color-grey) 50%,var(--color-light-grey) 50%,var(--color-light-grey) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .sectionDetails{
     padding: 20px 0 20px 0;
-    background-color: #f3f3f3;
-
+    background-color: var(--color-light-grey);
 }
 
 .sectionClients{
-    background-color: #f3f3f3;
+    background-color: var(--color-light-grey);
     padding: 20px 0 20px 0;
 }
 
@@ -83,7 +94,7 @@ h3{
 }
 
 .sectionCopyrights{
-    background-color: #6ab3ac;
+    background-color: var(--color-dark-green);
 }
 
 /*PADDING STYLING*/
@@ -125,7 +136,6 @@ h3{
 }
 
 /*BACKGROUNDS*/
-
 .bgRulerTop{
     background-image: url('../img/footer_bg.png');
     background-position: top;
@@ -138,6 +148,7 @@ h3{
     background-repeat: repeat-x;
 }
 
+/*BACKGROUND COLORS*/
 .bgColorWhite{
     background-color: white;
 }
@@ -159,15 +170,14 @@ h3{
 }
 
 .bgColorLightGrey{
-    background-color: #ececec;
+    background-color: var(--color-grey);
 }
 
 .bgColorVeryLight{
-    background-color: #f3f3f3;
+    background-color: var(--color-light-grey);
 }
 
 /*LI STYLING*/
-
 .bulletArrow1 li::before{
     font-family: FontAwesome;
     content: "\f061";
@@ -181,7 +191,7 @@ h3{
     content: "\f054";
     padding-right: 0.5rem;
     vertical-align: middle;
-    color: #74b7b0;
+    color: var(--color-dark-green);
 }
 
 .bulletArrow3 li::before{
@@ -197,7 +207,7 @@ h3{
     content: "\f00c";
     padding-right: 0.5rem;
     vertical-align: middle;
-    color: #74b7b0;
+    color: var(--color-dark-green);
 }
 
 /*NAVBAR STYLING*/
@@ -241,8 +251,8 @@ h3{
 }
 
 .dropdown-menu.show{
-background-color: transparent;
-border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .dropdown-toggle::after{
@@ -254,7 +264,6 @@ border: none;
 }
 
 /*TEXT STYLING*/
-
 .text-white{
     color: white;
 }
@@ -272,7 +281,7 @@ border: none;
 }
 
 .text-darkGreen{
-    color: #3b6360;
+    color: var(--color-dark-green);
 }
 
 .text-caps{
@@ -314,16 +323,6 @@ border: none;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,50%);
-}
-
-.offsetLeft{
-    position: relative;
-    left: 5%;
-}
-
-.offsetRight{
-    position: relative;
-    right: 5%;
 }
 
 .btn-info{
@@ -421,7 +420,7 @@ a:hover{
     height: 5px;
     margin-right: 5px;
     margin-left: 5px;
-    background-color: #b0b8b9;
+    background-color: var(--color-grey);
 }
 
 .carousel-indicators .active{
@@ -435,13 +434,6 @@ a:hover{
 .carousel-item{
     max-height: 500px;
 }
-
-/* not working properly. img not centering verticaly */
-/*.carousel-item img{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}*/
 
 /*DIV STYLING*/
 
@@ -493,7 +485,7 @@ a:hover{
     bottom: -10px;
     border-style: solid;
     border-width: 10px 10px 0 10px;
-    border-color: #ececec transparent transparent transparent;
+    border-color: var(--color-grey) transparent transparent transparent;
 
 }
 
