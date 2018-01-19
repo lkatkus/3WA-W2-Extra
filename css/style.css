@@ -321,14 +321,14 @@ h3{
     transform: translate(-50%,-50%);
 }
 
-.offsetMidTop{
+.offsetMidTop{ /* for tab buttons "read more" and etc. */
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.offsetMidBottom{
+.offsetMidBottom{ /* for tab buttons "read more" and etc. */
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -586,7 +586,6 @@ tr{
 }
 
 /*ACCORDION STYLING*/
-
 .card{
     margin-bottom: 10px;
     border-bottom: solid 2px #c3c3c3;
@@ -638,8 +637,39 @@ tr{
     border-bottom: solid 2px #c3c3c3;
 }
 
-/* MEDIA QUERY OVERWRITS */
+.aboutImagesContainer{
+    position: relative;
+}
 
+.aboutImageMid{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    z-index: 2;
+}
+
+.aboutImageShadowLeft{
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.aboutImageShadowRight{
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+/* MEDIA QUERY OVERWRITS */
 @media (max-width: 576px) {
     .projectTab{
         margin-top: 0;
@@ -648,5 +678,19 @@ tr{
 
     .btn-secondary{
         margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutImageMid{
+        position: unset;
+        left: unset;
+        bottom: unset;
+        transform: unset;
+        z-index: unset;
+    }
+
+    .hide-sm{
+        display: none;
     }
 }
