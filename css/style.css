@@ -2,16 +2,20 @@
 
 /*VARIABLES*/
 *{
+    --default-transition: all 0.5s;
+    --style-border-radius: 0.5rem;
 
     /*COLOR SCHEME*/
-    --default-transition: all 0.5s;
+    --color-light-green: #88cec8; /*HEADER, FOOTER, INFO BTNS */
     --color-green: #76c7c0; /*HEADER, FOOTER, INFO BTNS */
     --color-dark-green: #6ab3ac; /* FOOTER COPYRIGHTS */
+    --color-light-red: #e8645a; /* DANGER BTN, GENERAL HIGHLIGHTS */
     --color-red: #e2534b; /* DANGER BTN, GENERAL HIGHLIGHTS */
+    --color-dark-red: #de3e35; /* DANGER BTN, GENERAL HIGHLIGHTS */
     --color-grey: #ececec; /* SECTION BACKGROUND */
     --color-light-grey: #f3f3f3; /* SECTION BACKGROUND */
+    --color-dark-grey: #d3d3d3; /* SECTION BACKGROUND */
 
-    --style-border-radius: 0.5rem;
 }
 
 /*GLOBAL*/
@@ -57,7 +61,6 @@ h3{
 }
 
 /*SECTIONS*/
-
 .sectionHeader{
     background-color: var(--color-green);
     padding: 10px 0 10px 0;
@@ -126,11 +129,11 @@ h3{
 }
 
 .margin0{
-    margin: 0;
+    margin: 0!important;
 }
 
 .padding0{
-    padding: 0;
+    padding: 0!important;
 }
 
 .btnPadding{
@@ -229,9 +232,9 @@ h3{
 }
 
 .navbar li:hover{
-    background-color: #e8645a;
+    background-color: var(--color-light-green);
     border-radius: 0.5rem;
-    border-bottom: solid 2px var(--color-red);
+    border-bottom: solid 2px var(--color-dark-green);
 }
 
 .menu {
@@ -244,15 +247,18 @@ h3{
     box-sizing: border-box;
     background-color: var(--color-red);
     border-radius: 0.5rem;
-    padding: 3px;
+    padding: 5px;
 }
 
 .dropMenuStyle a{
-    border-bottom: solid 2px var(--color-red);
     color: white;
     background-color: #e8645a;
     border-radius: 0.5rem;
     transition: var(--default-transition);
+}
+
+.dropMenuStyle a+a{ /*for spacing between dropmenu items */
+    margin-top: 5px;
 }
 
 .dropMenuStyle a:hover{
@@ -270,7 +276,9 @@ h3{
 }
 
 .navbar .active{
-    background-color: red;
+    background-color: var(--color-light-red);
+    border-radius: 0.5rem;
+    border-bottom: solid 2px var(--color-dark-red);
 }
 
 /*TEXT STYLING*/
@@ -303,7 +311,6 @@ h3{
 }
 
 /*BUTTON STYLING*/
-
 .btnWidth60{
     width: 60%;
 }
@@ -447,6 +454,45 @@ a:hover{
     max-height: 500px;
 }
 
+/*CLIENT CAROUSEL*/
+
+.clientImageContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#clientCarousel img{
+    width: 100%;
+}
+
+#clientCarousel .carousel-inner, .carousel-item{
+    max-height: unset;
+}
+
+#clientCarouselControls .carousel-control-next, #clientCarouselControls .carousel-control-prev{
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+
+#clientCarouselControls .carousel-control-next-icon, #clientCarouselControls .carousel-control-prev-icon{
+    background-color: var(--color-dark-grey);
+    border-radius: var(--style-border-radius);
+    width: 20px;
+    height: 20px;
+}
+
+#clientCarouselControls .carousel-control-next-icon:hover, #clientCarouselControls .carousel-control-prev-icon:hover{
+    background-color: var(--color-light-red);
+    border-bottom: solid 2px var(--color-red);
+}
+
+.clientImageContainer .row .col-md-2{
+    margin-bottom: 20px;
+}
+
 /*DIV STYLING*/
 .roundedCorner{
     border-radius: 0.5rem;
@@ -541,6 +587,8 @@ a:hover{
     background-color: var(--color-red);
     color: white;
 }
+
+
 
 /*FORM STYLING*/
 input, textarea{
